@@ -1,5 +1,11 @@
 package fr.dawan.webRadio.beans;
 
+/**
+ * Permet de gérer les informations des utilisateurs de l'application 
+ * @author Admin stagiaire
+ *
+ */
+
 public class Utilisateur {
 	private long id;
 	private String nom;

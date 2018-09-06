@@ -1,5 +1,10 @@
 package fr.dawan.webRadio.beans;
 
+/**
+ * Permet de gérer les informations relatifs aux morceaux qui seront lu par le lecteur
+ * @author Admin stagiaire
+ *
+ */
 public class Morceau {
 
 	private long id;
