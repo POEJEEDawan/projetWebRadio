@@ -16,6 +16,7 @@ public class MainLecteur {
 			LecteurHandler.play(lecteur);
 		} catch (Exception e) {
 			System.out.println("Impossible de lire le fichier");
+			e.printStackTrace();
 		}
 	}
 

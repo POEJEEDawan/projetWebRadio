@@ -3,6 +3,7 @@ package fr.dawan.webRadio.controllers;
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.InputStream;
 
 import fr.dawan.webRadio.beans.Lecteur;
 import fr.dawan.webRadio.beans.Morceau;
@@ -20,14 +21,29 @@ public class LecteurHandler {
 
 	public static boolean play(Lecteur lecteur) throws Exception {
 		boolean isPlaying = false;
-		if (!lecteur.getMorceaux().isEmpty()) {
+	//	if (!lecteur.getMorceaux().isEmpty()) {
+//			Morceau morceau = lecteur.getMorceaux().iterator().next();
+//			BufferedInputStream in = new BufferedInputStream(new FileInputStream(new File(morceau.getChemin())));
+//			lecteur.setPlayer(new AdvancedPlayer(in));
+//			lecteur.getPlayer().play();
+//			isPlaying = true;
+//			in.close();
+//			
+			
+			
+			//---------------
+			String keyName = "Lone-Temples.mp3";
+			
 			Morceau morceau = lecteur.getMorceaux().iterator().next();
-			BufferedInputStream in = new BufferedInputStream(new FileInputStream(new File(morceau.getChemin())));
+			InputStream input = ConnexionBucket.getObjectFromBucket(keyName);
+			BufferedInputStream in = new BufferedInputStream(input);
 			lecteur.setPlayer(new AdvancedPlayer(in));
 			lecteur.getPlayer().play();
 			isPlaying = true;
 			in.close();
-		}
+			
+			
+	//	}
 		return isPlaying;
 	}
 
