@@ -9,7 +9,7 @@ public class Utilisateur {
 	private String password;
 	private String region;
 	private String bibliographie;
-	
+
 	public Utilisateur() {
 	}
 
@@ -51,7 +51,7 @@ public class Utilisateur {
 	}
 
 	public void setEmail(String email) {
-		//TODO écrire une regex valide
+		// TODO écrire une regex valide
 		this.email = email;
 	}
 
