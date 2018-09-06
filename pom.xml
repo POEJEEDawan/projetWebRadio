@@ -8,13 +8,13 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>projetWebRadio Maven Webapp</name>
 	<url>http://maven.apache.org</url>
-	
+
 	<scm>
-		<url>https://github.com/POEJEEDawan/projetWebRadio</url>
-		<connection>scm:git:git://github.com/POEJEEDawan/projetWebRadio</connection>
-		<developerConnection>scm:git:git@github.com:POEJEEDawan/projetWebRadio</developerConnection>
+		<url>https://github.com/ProjetWebRadio/projetWebRadio</url>
+		<connection>scm:git:git://github.com/ProjetWebRadio/projetWebRadio</connection>
+		<developerConnection>scm:git:git@github.com:ProjetWebRadio/projetWebRadio</developerConnection>
 	</scm>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -38,6 +38,14 @@
 	<build>
 		<finalName>projetWebRadio</finalName>
 		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.7.0</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-scm-plugin</artifactId>
