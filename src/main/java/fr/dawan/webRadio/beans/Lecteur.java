@@ -5,6 +5,11 @@ import java.util.Set;
 
 import javazoom.jl.player.advanced.AdvancedPlayer;
 
+/**
+ * Permet de gérer le lecteur radio
+ * @author Admin stagiaire
+ *
+ */
 public class Lecteur {
 
 	private Set<Morceau> morceaux = new HashSet<>();
