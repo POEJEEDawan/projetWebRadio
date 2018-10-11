@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+
+   .media img{
+        text-align: center;
+    }
+    
+    
+    .footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #1b1b1b;
+    background: rgba(27, 27, 27, 0.8);
+    width: 100%;
+    text-align: center;
+}
+    
+    .lecteur {
+    width: 100%;
+     padding: 20px;
+    }
+    
+    .cover{
+    width: 100%;
+   
+   
+    }
+   
