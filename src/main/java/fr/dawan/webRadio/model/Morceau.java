@@ -1,27 +1,32 @@
-package fr.dawan.webRadio.beans;
+package fr.dawan.webRadio.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
 /**
  * Permet de gérer les informations relatifs aux morceaux qui seront lu par le lecteur
  * @author Admin stagiaire
  *
  */
-public class Morceau {
 
-	private long id;
+@Entity
+@Table(name="morceau")
+public class Morceau extends DbObject {
+	private static final long serialVersionUID = 3429597890704290352L;
+	
+	@Column(length=50, nullable=false)
 	private String nom;
+	@Column(length=50)
 	private String couverture;
+	@Column(nullable=false)
 	private String chemin;
+	@Column
 	private Genre genre;
+	@Column
 	private long utilisateurId;
 
-	public long getId() {
-		return id;
-	}
-
-	public void setId(long id) {
-		this.id = id;
-	}
-
+	
 	public String getNom() {
 		return nom;
 	}

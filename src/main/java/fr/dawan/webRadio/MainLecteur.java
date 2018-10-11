@@ -1,23 +1,19 @@
 package fr.dawan.webRadio;
 
-import fr.dawan.webRadio.beans.Lecteur;
-import fr.dawan.webRadio.beans.Morceau;
-import fr.dawan.webRadio.controllers.LecteurHandler;
+import java.sql.SQLException;
+
+import fr.dawan.webRadio.utils.TestUtils;
 
 public class MainLecteur {
 
 	public static void main(String[] args) {
-		Lecteur lecteur = new Lecteur();
-		Morceau morceau = new Morceau();
-		morceau.setNom("Pick Six");
-		morceau.setChemin("c:/envs/Gila- Pick Six.mp3");
-		LecteurHandler.add(morceau, lecteur);
 		try {
-			LecteurHandler.play(lecteur);
-		} catch (Exception e) {
-			System.out.println("Impossible de lire le fichier");
+			TestUtils.test();
+		} catch (SQLException e) {
+			System.out.println("Impossible de se connecter");
 			e.printStackTrace();
 		}
+
 	}
 
 }

@@ -20,7 +20,7 @@ public class ConnexionBucket {
     			 .build();
          S3Object object = s3.getObject(bucket_name, fileKeyName);
          InputStream objectData = object.getObjectContent();
-         return objectData;	 
+         return objectData;
      }
      
      
