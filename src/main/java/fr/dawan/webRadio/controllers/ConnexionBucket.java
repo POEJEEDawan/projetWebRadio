@@ -13,6 +13,8 @@ public class ConnexionBucket {
      
      private static String bucket_name ="mp3webradio-benjixxx";
      
+     public static String bucketUrl = "https://s3.eu-west-3.amazonaws.com/mp3webradio-benjixxx/";
+     
      public static InputStream getObjectFromBucket(String fileKeyName) throws Exception {
     	 final AmazonS3 s3 = AmazonS3ClientBuilder.standard()
     			 .withRegion(Regions.EU_WEST_3)
