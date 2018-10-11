@@ -21,7 +21,7 @@
 			<div class="lecteur">
 
 				<audio controls>
-					<source src="musique/leaves.mp3" type="audio/mp3">
+					<source src="https://s3.eu-west-3.amazonaws.com/mp3webradio-benjixxx/Lone-Temples.mp3" type="audio/mp3">
 				</audio>
 				<div class="boutons">
 					<div class="play"></div>
