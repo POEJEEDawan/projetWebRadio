@@ -5,8 +5,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 
-import fr.dawan.webRadio.beans.Lecteur;
-import fr.dawan.webRadio.beans.Morceau;
+import fr.dawan.webRadio.model.Lecteur;
+import fr.dawan.webRadio.model.Morceau;
 import javazoom.jl.player.advanced.AdvancedPlayer;
 
 public class LecteurHandler {

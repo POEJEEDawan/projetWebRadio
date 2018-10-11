@@ -1,19 +1,32 @@
-package fr.dawan.webRadio.beans;
+package fr.dawan.webRadio.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
 /**
- * Permet de gérer les informations des utilisateurs de l'application 
+ * Permet de gérer les informations des utilisateurs de l'application
+ * 
  * @author Admin stagiaire
  *
  */
+@Entity
+@Table(name="utilisateur")
+public class Utilisateur extends DbObject {
 
-public class Utilisateur {
-	private long id;
+	@Column(nullable=false, length=50)
 	private String nom;
+	@Column(nullable=false, length=50)
 	private String prenom;
+	@Column(nullable=false, length=50)
 	private String email;
+	@Column(nullable=false, length=20)
 	private String username;
+	@Column(nullable=false, length=20)
 	private String password;
+	@Column(length=50)
 	private String region;
+	@Column
 	private String bibliographie;
 
 	public Utilisateur() {
@@ -26,14 +39,6 @@ public class Utilisateur {
 		this.username = username;
 		this.region = region;
 		this.bibliographie = bibliographie;
-	}
-
-	public long getId() {
-		return id;
-	}
-
-	public void setId(long id) {
-		this.id = id;
 	}
 
 	public String getNom() {
