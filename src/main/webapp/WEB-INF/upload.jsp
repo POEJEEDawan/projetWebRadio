@@ -13,7 +13,6 @@
 			</div>
 		</div>
 
-
 		<div class="row">
 			<div class="col-lg-12">
 				<form id="contactForm" name="sentUpload" novalidate="novalidate"
@@ -33,7 +32,6 @@
 									data-validation-required-message="Send your track ">
 								<p class="help-block text-danger"></p>
 							</div>
-
 
 						</div>
 						<div class="col-md-6">
