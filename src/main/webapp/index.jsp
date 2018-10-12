@@ -2,6 +2,7 @@
 <jsp:include page="WEB-INF/header.jsp">
 	<jsp:param value="Accueil" name="title" />
 </jsp:include>
+
 <!-- Main  -->
 
 	<div class="container">
@@ -23,8 +24,9 @@
 						</div>
 					</div>
 				</c:if>
-				<hr>
-			</div>
+				
+					<hr>
+				</div>
 
 			<hr>
 		</div>

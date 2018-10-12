@@ -8,7 +8,10 @@ public class Artiste extends DbObject{
 	private String nom;
 	private ArrayList<Morceau> morceau;
 	
-public Artiste() {
+public Artiste(String nom) {
+	this.nom = nom;
+}
+	public Artiste() {
 	
 }
 
