@@ -6,10 +6,12 @@
 
 <meta charset="ISO-8859-1">
 <title>Nos artistes</title>
-</head>
-<body>
 
+
+   
    <h2>page en construction</h2>
 
 
 <jsp:include page="footer.jsp" />
+
+  

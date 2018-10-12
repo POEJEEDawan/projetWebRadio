@@ -30,20 +30,32 @@ public class Upload extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-         
+
 		request.getRequestDispatcher("WEB-INF/upload.jsp").forward(request, response);
 
-		
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-             
-		    Artiste artiste = new Artiste();
-//		    String nom =  request.getParameter(nomArtiste);
-		    
-		   
-	
-	}
 
+		String file = request.getParameter("file");
+		String nom = request.getParameter("nomArtiste");
+		String titreMorceau = request.getParameter("morceau");
+		String message = null;
+		String errors = null;
+
+		
+		if (titreMorceau.isEmpty()) {
+			errors = "Le morceau est obligatoire";
+		}else if (nom.isEmpty()) {
+			errors ="Votre nom d'artiste est obligatoire";
+		}else if (file.isEmpty()) {
+			errors ="Envoi obligatoire";
+		}else {
+			message = "Merci de votre confiance";
+		}	
+		
+		
+		
+	}
 }

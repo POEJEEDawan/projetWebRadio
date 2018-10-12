@@ -12,25 +12,29 @@
 				<h3 class="section-subheading text-muted">Postez votre morceau</h3>
 			</div>
 		</div>
-		
+
+
 		<div class="row">
 			<div class="col-lg-12">
-				<form id="contactForm" name="sentMessage" novalidate="novalidate" method="post" action ="upload">
+				<form id="contactForm" name="sentUpload" novalidate="novalidate"
+					method="post" action="">
 					<div class="row">
 						<div class="col-md-6">
 							<div class="form-group">
-								<input class="form-control" id="nameArtist" type="text" name ="nomArtiste"
-									placeholder="Your Artist name *" required="required"
+								<input class="form-control" id="nomArtiste" type="text"
+									name="nomArtiste" placeholder="Your Artist name *"
+									required="required"
 									data-validation-required-message="Please enter your Artistname.">
 								<p class="help-block text-danger"></p>
 							</div>
 							<div class="form-group">
-								<input class="form-control" id="morceau" type="morceau" name="morceau"
-									placeholder="Your track *" required="required"
+								<input class="form-control" id="morceau" type="morceau"
+									name="morceau" placeholder="Your track *" required="required"
 									data-validation-required-message="Send your track ">
 								<p class="help-block text-danger"></p>
 							</div>
-							
+
+
 						</div>
 						<div class="col-md-6">
 							<div class="form-group">
@@ -45,7 +49,7 @@
 							<div id="success"></div>
 							<button id="sendMessageButton"
 								class="btn btn-primary btn-xl text-uppercase" type="submit">
-								<input type="file" name="nom" />
+								<input type="file" name="fichier" />
 							</button>
 						</div>
 					</div>
@@ -53,6 +57,31 @@
 			</div>
 		</div>
 	</div>
+	<%
+		String message = (String) request.getAttribute("message");
+
+		String errors = (String) request.getAttribute("errors");
+	%>
+	<%
+		if (errors != null) {
+	%>
+	<p class="alert alert danger">
+		<%=errors%>
+	</p>
+	<%
+		}
+	%>
+
+	<%
+		if (message != null) {
+	%>
+	<p class="text-sucess">
+		<%=message%></p>
+	<%
+		}
+	%>
+
 </section>
+
 
 <jsp:include page="footer.jsp" />
