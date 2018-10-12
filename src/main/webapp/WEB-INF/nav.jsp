@@ -23,7 +23,7 @@
 				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 					<li class="nav-item active"><a class="nav-link" href="#">Home
 					</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">Artiste</a></li>
+					<li class="nav-item"><a class="nav-link" href="artiste">Artiste</a></li>
 					<li class="nav-item"><a class="nav-link" href="upload">Upload</a></li>
 				</ul>
 				<form class="form-inline my-2 my-lg-0">
