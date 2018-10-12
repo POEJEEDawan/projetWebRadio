@@ -32,6 +32,10 @@ public class Utilisateur extends DbObject {
 	public Utilisateur() {
 	}
 
+	public Utilisateur(String nom) {
+		
+	}
+	
 	public Utilisateur(String nom, String prenom, String email, String username, String region, String bibliographie) {
 		this.nom = nom;
 		this.prenom = prenom;
