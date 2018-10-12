@@ -12,6 +12,9 @@ public class MainLecteur {
 		} catch (SQLException e) {
 			System.out.println("Impossible de se connecter");
 			e.printStackTrace();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 
 	}

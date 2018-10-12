@@ -19,7 +19,7 @@ public class LecteurHandler {
 		return lecteur.getMorceaux().remove(morceau);
 	}
 
-	public static boolean play(Lecteur lecteur) throws Exception {
+	public static boolean play(Lecteur lecteur, String keyName) throws Exception {
 		boolean isPlaying = false;
 	//	if (!lecteur.getMorceaux().isEmpty()) {
 //			Morceau morceau = lecteur.getMorceaux().iterator().next();
@@ -32,9 +32,8 @@ public class LecteurHandler {
 			
 			
 			//---------------
-			String keyName = "Lone-Temples.mp3";
+//			String keyName = "Lone-Temples.mp3";
 			
-			Morceau morceau = lecteur.getMorceaux().iterator().next();
 			InputStream input = ConnexionBucket.getObjectFromBucket(keyName);
 			BufferedInputStream in = new BufferedInputStream(input);
 			lecteur.setPlayer(new AdvancedPlayer(in));
