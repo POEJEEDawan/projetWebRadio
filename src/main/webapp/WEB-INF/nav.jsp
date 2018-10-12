@@ -25,6 +25,7 @@
 					</a></li>
 					<li class="nav-item"><a class="nav-link" href="artiste">Artiste</a></li>
 					<li class="nav-item"><a class="nav-link" href="upload">Upload</a></li>
+					<li class="nav-item"><a class="nav-link" href="liste">Liste des morceaux</a></li>
 				</ul>
 				<form class="form-inline my-2 my-lg-0">
 					<input class="form-control mr-sm-2" type="search"

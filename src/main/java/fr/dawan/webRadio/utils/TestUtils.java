@@ -16,7 +16,7 @@ public class TestUtils {
 	public static void test() throws Exception {
 //		GenericDao dao = new GenericDao();
 		MorceauDao mDao = new MorceauDao();
-	    EntityManager em = PersistenceUnitFactory.createEntityManager("projetWebRadio");
+	    EntityManager em = PersistenceUnitFactory.createEntityManager();
 		Morceau morceau = mDao.getByName("Lone Temples", em, false);
 		LecteurHandler.play(new Lecteur(), morceau.getChemin());
 //	    morceau.setNom("Lone Temples");

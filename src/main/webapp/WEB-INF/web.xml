@@ -8,9 +8,20 @@
   	<servlet-name>IndexServlet</servlet-name>
   	<servlet-class>fr.dawan.webRadio.controllers.IndexServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>ListeMorceauxServlet</display-name>
+  	<servlet-name>ListeMorceauxServlet</servlet-name>
+  	<servlet-class>fr.dawan.webRadio.servlets.ListeMorceauxServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>IndexServlet</servlet-name>
   	<url-pattern>/IndexServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ListeMorceauxServlet</servlet-name>
+  	<url-pattern>/ListeMorceauxServlet</url-pattern>
   </servlet-mapping>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>

@@ -1,4 +1,4 @@
-  <!-- Header -->
+<!-- Header -->
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ page isELIgnored="false"%>
@@ -22,7 +22,5 @@
 
 </head>
 <body>
-<%@ include file="nav.jsp"%>
-   
-	
-		
+	<%@ include file="nav.jsp"%>
+	<section>

@@ -1,4 +1,4 @@
-  <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
   <jsp:include page="header.jsp" />
   <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
