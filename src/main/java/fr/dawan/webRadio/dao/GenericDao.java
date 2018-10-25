@@ -34,7 +34,6 @@ public class GenericDao {
 			try {
 				tx.begin();
 				em.remove(item);
-
 				tx.commit();
 			} catch (Exception e) {
 				tx.rollback();

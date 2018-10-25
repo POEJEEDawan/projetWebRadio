@@ -4,6 +4,7 @@
 		<class>fr.dawan.webRadio.model.Utilisateur</class>
 		<class>fr.dawan.webRadio.model.Morceau</class>
 		<class>fr.dawan.webRadio.model.DbObject</class>
+		<class>fr.dawan.webRadio.model.Artiste</class>
 		<properties>
 			<property name="javax.persistence.jdbc.user" value="benjixxx"/>
 			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://webradiodb.ct5yhwodybmy.eu-west-3.rds.amazonaws.com:3306/dbwebradio"/>

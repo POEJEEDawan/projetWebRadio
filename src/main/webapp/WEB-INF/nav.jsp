@@ -1,5 +1,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
+
+
 <section id="nav">
 <div class="row">
 <div class="col-12 col-md-2">
@@ -9,7 +11,6 @@
 					<img
 						src="http://rdironworks.com/wp-content/uploads/2017/12/dummy-200x200.png"
 						alt="..." class="img-thumbnail">
-
 				</div>
 			</div>
 		</div>
@@ -28,11 +29,23 @@
 					<li class="nav-item"><a class="nav-link" href="liste">Liste des morceaux</a></li>
 				    <li class="nav-item"><a class="nav-link" href="inscription">Inscription</a></li>
 				</ul>
+				 
 				<form class="form-inline my-2 my-lg-0">
-					<input class="form-control mr-sm-2" type="search"
-						placeholder="Search">
+					<input class="form-control mr-sm-1" type="search" 
+						placeholder="recherche artiste">
 					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			
 				</form>
+			     
+			      <i class="fa fa-user" aria-hidden="true" align="center"><c:if test="${ !empty sessionScope.nom }">
+                  <p> ${sessionScope.nom } ! connecté </p>
+                  <a class="nav-link" href="deconnexion ">Déconnexion</a>
+                  </c:if>
+                  <c:if test="${ empty sessionScope.nom }">
+                  <a class="nav-link" href="connexion ">Connexion</a>
+                  </c:if>
+                  </i>
+			 
 			</div>
 		</nav>
 </div>

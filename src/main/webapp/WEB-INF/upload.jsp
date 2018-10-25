@@ -16,7 +16,7 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<form id="contactForm" name="sentUpload" novalidate="novalidate"
-					method="post" action="">
+					method="POST" action="upload" enctype ="multipart/form-data">
 					<div class="row">
 						<div class="col-md-6">
 							<div class="form-group">
@@ -27,8 +27,8 @@
 								<p class="help-block text-danger"></p>
 							</div>
 							<div class="form-group">
-								<input class="form-control" id="morceau" type="morceau"
-									name="morceau" placeholder="Your track *" required="required"
+								<input class="form-control" id="titreMorceau" type="text"
+									name="titreMorceau" placeholder="Your track *" required="required"
 									data-validation-required-message="Send your track ">
 								<p class="help-block text-danger"></p>
 							</div>
@@ -45,39 +45,17 @@
 						<div class="clearfix"></div>
 						<div class="col-lg-12 text-center">
 							<div id="success"></div>
-							<button id="sendMessageButton"
-								class="btn btn-primary btn-xl text-uppercase" type="submit">
-								<input type="file" name="fichier" />
-							</button>
+							
+								
+								<input type="file" name="file" id="file"/>
+							    <input type="submit" name ="envoi" id ="envoi"/>
+							    
 						</div>
 					</div>
 				</form>
 			</div>
 		</div>
 	</div>
-	<%
-		String message = (String) request.getAttribute("message");
-
-		String errors = (String) request.getAttribute("errors");
-	%>
-	<%
-		if (errors != null) {
-	%>
-	<p class="alert alert danger">
-		<%=errors%>
-	</p>
-	<%
-		}
-	%>
-
-	<%
-		if (message != null) {
-	%>
-	<p class="text-sucess">
-		<%=message%></p>
-	<%
-		}
-	%>
 
 </section>
 
