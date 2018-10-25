@@ -10,39 +10,16 @@ import com.amazonaws.services.s3.model.S3Object;
 
 public class ConnexionBucket {
 
-     
-     private static String bucket_name ="mp3webradio-benjixxx";
-     
-     public static String bucketUrl = "https://s3.eu-west-3.amazonaws.com/mp3webradio-benjixxx/";
-     
-     public static InputStream getObjectFromBucket(String fileKeyName) throws Exception {
-    	 final AmazonS3 s3 = AmazonS3ClientBuilder.standard()
-    			 .withRegion(Regions.EU_WEST_3)
-    			 .withCredentials(new ProfileCredentialsProvider())
-    			 .build();
-         S3Object object = s3.getObject(bucket_name, fileKeyName);
-         InputStream objectData = object.getObjectContent();
-         return objectData;
-     }
-     
-     
-     
-     
-     /*
-       AmazonS3 s3Client = AmazonS3ClientBuilder.standard()
-                    .withRegion(clientRegion)
-                    .withCredentials(new ProfileCredentialsProvider())
-                    .build();
+	private static String bucket_name = "mp3webradio-benjixxx";
 
-            // Get an object and print its contents.
-            System.out.println("Downloading an object");
-            fullObject = s3Client.getObject(new GetObjectRequest(bucketName, key));
-            System.out.println("Content-Type: " + fullObject.getObjectMetadata().getContentType());
-            System.out.println("Content: ");
-            displayTextInputStream(fullObject.getObjectContent());
-      */
-    
+	public static String bucketUrl = "https://s3.eu-west-3.amazonaws.com/mp3webradio-benjixxx/";
 
-
+	public static InputStream getObjectFromBucket(String fileKeyName) throws Exception {
+		final AmazonS3 s3 = AmazonS3ClientBuilder.standard().withRegion(Regions.EU_WEST_3)
+				.withCredentials(new ProfileCredentialsProvider()).build();
+		S3Object object = s3.getObject(bucket_name, fileKeyName);
+		InputStream objectData = object.getObjectContent();
+		return objectData;
+	}
 
 }

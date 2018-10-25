@@ -13,19 +13,21 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/artiste")
 public class Artiste extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    
-    public Artiste() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
-	
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+	public Artiste() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		request.getRequestDispatcher("WEB-INF/artiste.jsp").forward(request, response);
 
 	}
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
