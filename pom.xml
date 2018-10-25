@@ -23,18 +23,23 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
+			<groupId>javax.servlet.jsp.jstl</groupId>
+			<artifactId>javax.servlet.jsp.jstl-api</artifactId>
+			<version>1.2.1</version>
+		</dependency>
+		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
-		
-		 <!-- https://mvnrepository.com/artifact/org.webjars/bootstrap -->
+
+		<!-- https://mvnrepository.com/artifact/org.webjars/bootstrap -->
 		<dependency>
 			<groupId>org.webjars</groupId>
 			<artifactId>bootstrap</artifactId>
 			<version>4.1.3</version>
 		</dependency>
-		
+
 		<!-- MP3 decoder/player/converter library for Java™ platform. -->
 		<dependency>
 			<groupId>javazoom</groupId>
@@ -58,6 +63,19 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.47</version>
 		</dependency>
+
+		<!-- dependance Spring -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>5.1.0.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>4.0.2.RELEASE</version>
+		</dependency>
+
 		<!-- JPA -->
 		<dependency>
 			<groupId>org.hibernate.javax.persistence</groupId>
@@ -86,6 +104,18 @@
 				<artifactId>maven-scm-plugin</artifactId>
 				<version>1.10.0</version>
 			</plugin>
+
+<!-- 			<plugin> -->
+<!-- 				<groupId>org.apache.maven.plugins</groupId> -->
+<!-- 				<artifactId>maven-war-plugin</artifactId> -->
+<!-- 				<version>2.6</version> -->
+<!-- 				<configuration> -->
+<!-- 					<failOnMissingWebXml>false</failOnMissingWebXml> -->
+<!-- 				</configuration> -->
+<!-- 			</plugin> -->
 		</plugins>
+
+
+
 	</build>
 </project>

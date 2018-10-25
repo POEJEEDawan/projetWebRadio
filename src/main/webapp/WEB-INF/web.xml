@@ -1,53 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
-  <display-name>projetWebRadio</display-name>
-  <servlet>
-  	<description>
-  	</description>
-  	<display-name>IndexServlet</display-name>
-  	<servlet-name>IndexServlet</servlet-name>
-  	<servlet-class>fr.dawan.webRadio.controllers.IndexServlet</servlet-class>
-  </servlet>
-  <servlet>
-  	<description>
-  	</description>
-  	<display-name>Upload</display-name>
-  	<servlet-name>Upload</servlet-name>
-  	<servlet-class>fr.dawan.webRadio.controllers.Upload</servlet-class>
-  </servlet>
-  <servlet>
-  	<description>
-  	</description>
-  	<display-name>Inscription</display-name>
-  	<servlet-name>Inscription</servlet-name>
-  	<servlet-class>fr.dawan.webRadio.controllers.Inscription</servlet-class>
-  </servlet>
-  <servlet>
-  	<description>
-  	</description>
-  	<display-name>Artiste</display-name>
-  	<servlet-name>Artiste</servlet-name>
-  	<servlet-class>fr.dawan.webRadio.controllers.Artiste</servlet-class>
-  </servlet>
-  <servlet-mapping>
-  	<servlet-name>IndexServlet</servlet-name>
-  	<url-pattern>/IndexServlet</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>Inscription</servlet-name>
-  	<url-pattern>/Inscription</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>Artiste</servlet-name>
-  	<url-pattern>/Artiste</url-pattern>
-  </servlet-mapping>
- 
-  <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
-  </welcome-file-list>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>projetWebRadio</display-name>
+
+   
+<!-- 	<filter> -->
+<!-- 		<filter-name>FiltreUpload</filter-name> -->
+<!--         <filter-class>fr.dawan.webRadio.filtres</filter-class> -->
+<!-- 	</filter> -->
+<!-- 	<filter-mapping> -->
+<!-- 		<filter-name>FiltreUpload</filter-name> -->
+<!-- 		<url-pattern>/upload</url-pattern> -->
+<!-- 	</filter-mapping> -->
+	
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+      <servlet>
+		<servlet-name>IndexServlet</servlet-name>
+		<servlet-class>fr.dawan.webRadio.servlet.IndexServlet</servlet-class>
+	</servlet>
+   
+<!-- 	<servlet-mapping> -->
+<!-- 		<servlet-name>IndexServlet</servlet-name> -->
+<!-- 		<url-pattern>/index</url-pattern> -->
+<!-- 	</servlet-mapping> -->
+
+
+	
+
 </web-app>
