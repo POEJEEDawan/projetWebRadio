@@ -6,7 +6,6 @@ import javax.persistence.EntityManager;
 
 import fr.dawan.webRadio.controllers.ConnexionBucket;
 import fr.dawan.webRadio.controllers.LecteurHandler;
-import fr.dawan.webRadio.dao.ArtisteDao;
 import fr.dawan.webRadio.dao.GenericDao;
 import fr.dawan.webRadio.dao.MorceauDao;
 import fr.dawan.webRadio.model.Artiste;

@@ -26,6 +26,7 @@
 					</a></li>
 					<li class="nav-item"><a class="nav-link" href="artiste">Artiste</a></li>
 					<li class="nav-item"><a class="nav-link" href="upload">Upload</a></li>
+					<li class="nav-item"><a class="nav-link" href="liste">Liste des morceaux</a></li>
 				    <li class="nav-item"><a class="nav-link" href="inscription">Inscription</a></li>
 				</ul>
 				 
